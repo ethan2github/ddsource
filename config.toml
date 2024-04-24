@@ -137,7 +137,7 @@ pluralizelisttitles = false
     copyright = "Copyright (c) 2024, Decarb Direct Partners; all rights reserved."
 
     # Format dates with Go's time formatting
-    date_format = "April 01, 2024"
+    date_format = "January 2, 2006"
 
     dropdown_mouse_over = false
 
