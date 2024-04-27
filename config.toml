@@ -1,4 +1,4 @@
-baseurl = "https://decarbdirect.com/" # Configure URL. if using gh-pages https://github.com/ethan2github/hugo-universal-theme URL: https://ethan2github.github.io/hugo-universal-theme/
+baseurl = "https://decarbdirect.com/" # Configure URL.
 title = "Decarb Direct Partners"
 theme = "hugo-universal-theme"
 themesDir = "themes"
@@ -69,7 +69,7 @@ pluralizelisttitles = false
     name       = "About us"
     identifier = "menu.aboutus"
     weight     = 3
-# Top bar social links menu
+
 
 [[menu.topbar]]
     weight = 1
@@ -83,6 +83,13 @@ pluralizelisttitles = false
     name = "Email"
     url = "mailto:info@decarbdirect.com"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+[params]
+    # viewMorePostLink = "/blog/"
+    # author = "DevCows"
+    # defaultKeywords = ["devcows", "hugo", "go"]
+    # mainSections = ["blog"]
+    # defaultDescription = "Site template made by Devcows using Hugo"
 
     # Social media
     # facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
@@ -155,6 +162,7 @@ pluralizelisttitles = false
 
 [permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
+
 
 # Enable or disable top bar with social icons
 [params.topbar]
