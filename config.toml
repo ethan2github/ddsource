@@ -140,8 +140,8 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p>Your partner in decarbonization journey.</p>"
-    copyright = "Copyright (c) 2024, Decarb Direct Partners; all rights reserved."
+    about_us = "<p>Your partner in decarbonization journey</p>"
+    copyright = "Copyright (c) 2024, Decarb Direct Partners, all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -207,13 +207,13 @@ pluralizelisttitles = false
     # at 'exampleSite/data/features'.
     # For more information take a look at the README.
 
-[params.testimonials]
-    enable = true
+#[params.testimonials]
+ #   enable = false
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more information take a look at the README.
-    title = "Testimonials"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    # title = "Testimonials"
+    #subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
 # [params.see_more]
 #    enable = true
