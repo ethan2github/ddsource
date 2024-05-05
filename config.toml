@@ -3,10 +3,13 @@ title = "Decarb Direct Partners"
 theme = "hugo-universal-theme"
 themesDir = "themes"
 languageCode = "en-us"
+
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
+
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
+
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
@@ -30,59 +33,98 @@ pluralizelisttitles = false
     weight     = 1
 
 [[menu.main]]
-    name       = "Carbon Emission Measurement"
+    name       = "GHG Dashboard"
     url        = "/"
-    weight     = 1
+    weight     = 11
     parent     = "menu.products"
 
 [[menu.main]]
-    name       = "Emission Analytics"
+    name       = "GHG Analytics"
     url        = "/"
-    weight     = 2
+    weight     = 12
     parent     = "menu.products"
 
 [[menu.main]]
-    name       = "Sustainability Reporting"
+    name       = "GHG Reporting"
     url        = "/"
-    weight     = 3
+    weight     = 13
     parent     = "menu.products"
 
 [[menu.main]]
-    name       = "Decarbonization Strategy"
+    name       = "Decarbonization Solutions"
     url        = "/"
-    weight     = 4
+    weight     = 14
     parent     = "menu.products"
-
-#[[menu.main]]
-#    name       = "Option 5: Portfolio"
-#    url        = "/"
-#    weight     = 5
-#    parent     = "menu.home"
 
 [[menu.main]]
     name       = "Resources"
     identifier = "menu.resources"
     weight     = 2
 
+[[menu.main]]
+    name       = "Regulatory Updates"
+    url        = "/"
+    weight     = 21
+    parent     = "menu.resources"
 
+[[menu.main]]
+    name       = "Decarb Guidelines"
+    url        = "/"
+    weight     = 22
+    parent     = "menu.resources"
+
+[[menu.main]]
+    name       = "Case studies"
+    url        = "/"
+    weight     = 23
+    parent     = "menu.resources"
+
+[[menu.main]]
+    name       = "Decarb News"
+    identifier = "menu.decarbnews"
+    weight     = 3
+    
 [[menu.main]]
     name       = "About us"
     identifier = "menu.aboutus"
-    weight     = 3
+    weight     = 4
+
+[[menu.main]]
+    name       = "Mission"
+    url        = "/"
+    weight     = 41
+    parent     = "menu.aboutus"
+
+[[menu.main]]
+    name       = "Vision"
+    url        = "/"
+    weight     = 42
+    parent     = "menu.aboutus"
+
+[[menu.main]]
+    name       = "Partnership"
+    url        = "/"
+    weight     = 43
+    parent     = "menu.aboutus"
+
+[[menu.main]]
+    name       = "Contact us"
+    url        = "/"
+    weight     = 44
+    parent     = "menu.aboutus"
+
+#[[menu.topbar]]
+#    weight = 1
+#    name = "Phone"
+#   url = "tel:+84 912 345 678"
+#    pre = "<i class='fas fa-2x fa-phone'></i>"
 
 
-[[menu.topbar]]
-    weight = 1
-    name = "Phone"
-    url = "tel:+84 912 345 678"
-    pre = "<i class='fas fa-2x fa-phone'></i>"
-
-
-[[menu.topbar]]
-    weight = 5
-    name = "Email"
-    url = "mailto:info@decarbdirect.com"
-    pre = "<i class='fas fa-2x fa-envelope'></i>"
+#[[menu.topbar]]
+#    weight = 5
+#    name = "Email"
+#    url = "mailto:info@decarbdirect.com"
+#    pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
     # viewMorePostLink = "/blog/"
@@ -104,7 +146,7 @@ pluralizelisttitles = false
     # longitude = "-77.028333"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "default"
+    style = "green"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -146,7 +188,7 @@ pluralizelisttitles = false
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    dropdown_mouse_over = false
+    dropdown_mouse_over = true
 
     disabled_logo = false
     logo_text = "Decarb Direct Partners"
@@ -165,13 +207,13 @@ pluralizelisttitles = false
 
 
 # Enable or disable top bar with social icons
-[params.topbar]
-    enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on +84 912 345 678 or info@decarbdirect.com.</p>
-      <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-      <a href="mailto:info@decarbdirect.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
-      </p>
-      """
+#[params.topbar]
+#    enable = false
+#    text = """<p class="hidden-sm hidden-xs">Contact us on +84 912 345 678 or info@decarbdirect.com.</p>
+#      <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+#      <a href="mailto:info@decarbdirect.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+#      </p>
+#      """
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
@@ -179,30 +221,30 @@ pluralizelisttitles = false
     tags = true
     search = true
 
-[params.carouselCustomers]
-    items = 6
-    auto_play = false
-    slide_speed = 2000
-    pagination_speed = 1000
+# [params.carouselCustomers]
+#    items = 6
+#    auto_play = false
+#    slide_speed = 2000
+#    pagination_speed = 1000
 
-[params.carouselTestimonials]
-    items = 4
-    auto_play = false
-    slide_speed = 2000
-    pagination_speed = 1000
+# [params.carouselTestimonials]
+#    items = 4
+#    auto_play = false
+#    slide_speed = 2000
+#    pagination_speed = 1000
 
-[params.carouselHomepage]
+# [params.carouselHomepage]
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
     # For more information take a look at the README.
-    enable = true
-    auto_play = true
-    slide_speed = 2000
-    pagination_speed = 1000
+#    enable = true
+#    auto_play = true
+#    slide_speed = 2000
+#    pagination_speed = 1000
 
 [params.features]
     enable = true
-    cols = 3 # Default: 3, Available values 2,3,4,6
+    cols = 2 # Default: 3, Available values 2,3,4,6
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more information take a look at the README.
@@ -231,11 +273,11 @@ pluralizelisttitles = false
     title = "Our Clients"
     subtitle = ""
 
-#[params.recent_posts]
- #   enable = true
-  #  title = "From our blog"
-   # subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
-    #hide_summary = false
+[params.recent_posts]
+    enable = true
+    title = "From Decarb News"
+    subtitle = "Latest Updates and Insights in Policy, Decarbonization, Sustainable Development, and Emissions Reduction Efforts"
+    hide_summary = false
 
 [params.footer.recent_posts]
     enable = true
