@@ -6,6 +6,21 @@ languageCode = "en-us"
 
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
+[languages]
+	[languages.en]
+		languageName = "English"
+		contentDir = "content/en"
+		weight = 1
+
+	[languages.vi]
+		languageName = "Vietnamese"
+		contentDir = "content/vi"
+		weight = 2
+
+	[languages.vi.params]
+  		disqusshortname = ""
+  		googleanalytics = ""
+
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
@@ -26,92 +41,178 @@ pluralizelisttitles = false
 
 
 # Main menu
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "Products"
     identifier = "menu.products"
-    url        = "/"
+    url        = "/products"
     weight     = 1
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "GHG Dashboard"
-    url        = "/"
+    url        = "/products/dashboard"
     weight     = 11
     parent     = "menu.products"
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "GHG Analytics"
-    url        = "/"
+    url        = "/products/analytics"
     weight     = 12
     parent     = "menu.products"
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "GHG Reporting"
-    url        = "/"
+    url        = "/products/reporting"
     weight     = 13
     parent     = "menu.products"
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "Decarbonization Solutions"
-    url        = "/"
+    url        = "/products/solutions"
     weight     = 14
     parent     = "menu.products"
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "Resources"
+    url        = "/resources"
     identifier = "menu.resources"
     weight     = 2
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "Regulatory Updates"
-    url        = "/"
+    url        = "/resources/regulatory"
     weight     = 21
     parent     = "menu.resources"
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "Decarb Guidelines"
-    url        = "/"
+    url        = "/resources/guidelines"
     weight     = 22
     parent     = "menu.resources"
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "Case studies"
-    url        = "/"
+    url        = "/resources/cases"
     weight     = 23
     parent     = "menu.resources"
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "Decarb News"
+    url        = "/decarbnews/"
     identifier = "menu.decarbnews"
     weight     = 3
     
-[[menu.main]]
+[[languages.en.menu.main]]
     name       = "About us"
     identifier = "menu.aboutus"
+    url        = "/aboutus/"
     weight     = 4
 
-[[menu.main]]
-    name       = "Mission"
-    url        = "/"
+[[languages.en.menu.main]]
+    name       = "Mission & Vision"
+    url        = "/aboutus/mission"
     weight     = 41
     parent     = "menu.aboutus"
 
-[[menu.main]]
-    name       = "Vision"
-    url        = "/"
+[[languages.en.menu.main]]
+    name       = "Partnership"
+    url        = "/aboutus/partnership"
     weight     = 42
     parent     = "menu.aboutus"
 
-[[menu.main]]
-    name       = "Partnership"
-    url        = "/"
+[[languages.en.menu.main]]
+    name       = "Contact us"
+    url        = "/aboutus/contact"
     weight     = 43
     parent     = "menu.aboutus"
 
-[[menu.main]]
-    name       = "Contact us"
-    url        = "/"
-    weight     = 44
+#Vietnamese main menu
+
+[[languages.vi.menu.main]]
+    name       = "Sản phẩm"
+    identifier = "menu.products"
+    url        = "/products"
+    weight     = 1
+
+[[languages.vi.menu.main]]
+    name       = "GHG Dashboard"
+    url        = "/products/dashboard"
+    weight     = 11
+    parent     = "menu.products"
+
+[[languages.vi.menu.main]]
+    name       = "GHG Analytics"
+    url        = "/products/analytics"
+    weight     = 12
+    parent     = "menu.products"
+
+[[languages.vi.menu.main]]
+    name       = "GHG Reporting"
+    url        = "/products/reporting"
+    weight     = 13
+    parent     = "menu.products"
+
+[[languages.vi.menu.main]]
+    name       = "Decarbonization Solutions"
+    url        = "/products/solutions"
+    weight     = 14
+    parent     = "menu.products"
+
+[[languages.vi.menu.main]]
+    name       = "Thư viện"
+    url        = "/resources"
+    identifier = "menu.resources"
+    weight     = 2
+
+[[languages.vi.menu.main]]
+    name       = "Chính sách & quy định mới"
+    url        = "/resources/regulatory"
+    weight     = 21
+    parent     = "menu.resources"
+
+[[languages.vi.menu.main]]
+    name       = "Sổ tay hướng dẫn"
+    url        = "/resources/guidelines"
+    weight     = 22
+    parent     = "menu.resources"
+
+[[languages.vi.menu.main]]
+    name       = "Case studies"
+    url        = "/resources/cases"
+    weight     = 23
+    parent     = "menu.resources"
+
+[[languages.vi.menu.main]]
+    name       = "Decarb News"
+    url        = "/decarbnews/"
+    identifier = "menu.decarbnews"
+    weight     = 3
+    
+[[languages.vi.menu.main]]
+    name       = "Về Decarb Direct"
+    identifier = "menu.aboutus"
+    url        = "/aboutus/"
+    weight     = 4
+
+[[languages.vi.menu.main]]
+    name       = "Sứ mệnh & Tầm nhìn"
+    url        = "/aboutus/mission"
+    weight     = 41
     parent     = "menu.aboutus"
+
+[[languages.vi.menu.main]]
+    name       = "Hợp tác"
+    url        = "/aboutus/partnership"
+    weight     = 42
+    parent     = "menu.aboutus"
+
+[[languages.vi.menu.main]]
+    name       = "Liên hệ"
+    url        = "/aboutus/contact"
+    weight     = 43
+    parent     = "menu.aboutus"
+
+
+
 
 #[[menu.topbar]]
 #    weight = 1
@@ -127,11 +228,11 @@ pluralizelisttitles = false
 #    pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
-    # viewMorePostLink = "/blog/"
-    # author = "DevCows"
-    # defaultKeywords = ["devcows", "hugo", "go"]
-    # mainSections = ["blog"]
-    # defaultDescription = "Site template made by Devcows using Hugo"
+    viewMorePostLink = "/decarbnews/"
+    author = "ddp"
+    defaultKeywords = ["decarbonization", "update", "GHG news"]
+    mainSections = ["decarbnews"]
+    defaultDescription = "Stay informed on global climate policy, sustainable development initiatives, and progress in mitigating climate change."
 
     # Social media
     # facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
@@ -203,7 +304,8 @@ pluralizelisttitles = false
       """
 
 [permalinks]
-    blog = "/blog/:year/:month/:day/:filename/"
+
+    decarbnews = "/decarbnews/:year/:month/:day/:filename/"
 
 
 # Enable or disable top bar with social icons
@@ -280,9 +382,10 @@ pluralizelisttitles = false
     hide_summary = false
 
 [params.footer.recent_posts]
-    enable = true
+    enable = false
 
 [taxonomies]
   category = "categories"
   tag = "tags"
   author = "authors"
+  
