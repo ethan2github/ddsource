@@ -263,8 +263,8 @@ pluralizelisttitles = false
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io endpoint url
-    # formspree_action = "https://formspree.io/sample/of/endpoint"
-    # contact_form_ajax = false
+     formspree_action = "https://formspree.io/f/mvoeyrbg"
+     contact_form_ajax = false
 
     # Formspree form supports Google reCAPTCHA Key (type v2).
     # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
@@ -304,7 +304,7 @@ pluralizelisttitles = false
       """
 
 [permalinks]
-
+	
     decarbnews = "/decarbnews/:year/:month/:day/:filename/"
 
 
@@ -378,7 +378,7 @@ pluralizelisttitles = false
 [params.recent_posts]
     enable = true
     title = "From Decarb News"
-    subtitle = "Latest Updates and Insights in Policy, Decarbonization, Sustainable Development, and Emissions Reduction Efforts"
+    subtitle = "Stay informed on global climate policy, sustainable development initiatives, and progress in mitigating climate change."
     hide_summary = false
 
 [params.footer.recent_posts]
