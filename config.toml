@@ -130,84 +130,84 @@ pluralizelisttitles = false
 [[languages.vi.menu.main]]
     name       = "Sản phẩm"
     identifier = "menu.products"
-    url        = "/products"
+    url        = "/vi/products"
     weight     = 1
 
 [[languages.vi.menu.main]]
     name       = "GHG Dashboard"
-    url        = "/products/dashboard"
+    url        = "/vi/products/dashboard"
     weight     = 11
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "GHG Analytics"
-    url        = "/products/analytics"
+    url        = "/vi/products/analytics"
     weight     = 12
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "GHG Reporting"
-    url        = "/products/reporting"
+    url        = "/vi/products/reporting"
     weight     = 13
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "Decarbonization Solutions"
-    url        = "/products/solutions"
+    url        = "/vi/products/solutions"
     weight     = 14
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "Thư viện"
-    url        = "/resources"
+    url        = "/vi/resources"
     identifier = "menu.resources"
     weight     = 2
 
 [[languages.vi.menu.main]]
     name       = "Chính sách & quy định mới"
-    url        = "/resources/regulatory"
+    url        = "/vi/resources/regulatory"
     weight     = 21
     parent     = "menu.resources"
 
 [[languages.vi.menu.main]]
     name       = "Sổ tay hướng dẫn"
-    url        = "/resources/guidelines"
+    url        = "/vi/resources/guidelines"
     weight     = 22
     parent     = "menu.resources"
 
 [[languages.vi.menu.main]]
     name       = "Case studies"
-    url        = "/resources/cases"
+    url        = "/vi/resources/cases"
     weight     = 23
     parent     = "menu.resources"
 
 [[languages.vi.menu.main]]
     name       = "Decarb News"
-    url        = "/decarbnews/"
+    url        = "/vi/decarbnews/"
     identifier = "menu.decarbnews"
     weight     = 3
     
 [[languages.vi.menu.main]]
     name       = "Về Decarb Direct"
     identifier = "menu.aboutus"
-    url        = "/aboutus/"
+    url        = "/vi/aboutus/"
     weight     = 4
 
 [[languages.vi.menu.main]]
     name       = "Sứ mệnh & Tầm nhìn"
-    url        = "/aboutus/mission"
+    url        = "/vi/aboutus/mission"
     weight     = 41
     parent     = "menu.aboutus"
 
 [[languages.vi.menu.main]]
     name       = "Hợp tác"
-    url        = "/aboutus/partnership"
+    url        = "/vi/aboutus/partnership"
     weight     = 42
     parent     = "menu.aboutus"
 
 [[languages.vi.menu.main]]
     name       = "Liên hệ"
-    url        = "/aboutus/contact"
+    url        = "/vi/aboutus/contact"
     weight     = 43
     parent     = "menu.aboutus"
 
