@@ -304,7 +304,9 @@ pluralizelisttitles = false
       """
 
 [permalinks]
-	
+	regulatory = "/regulatory/:year/:month/:day/:filename/"
+ 	guidelines = "/guidelines/:year/:month/:day/:filename/"
+  	cases = "/cases/:year/:month/:day/:filename/"
     decarbnews = "/decarbnews/:year/:month/:day/:filename/"
 
 
