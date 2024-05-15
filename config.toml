@@ -160,7 +160,7 @@ pluralizelisttitles = false
 
 [[languages.vi.menu.main]]
     name       = "Decarbonization Solutions"
-    url        = "/products/solutions"
+    url        = "/vi/products/solutions"
     weight     = 14
     parent     = "menu.products"
 
@@ -227,8 +227,22 @@ pluralizelisttitles = false
     
     style = "green"
 
-    formspree_action = "https://formspree.io/f/mvoeyrbg"
-    contact_form_ajax = false
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 50 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - register your account to https://formspree.io/register
+    # - login and create new form
+    # - set your form's endpoint url under 'formspree_action' below
+    # - upload the generated site to your server
+    # - test a dummy email yourself
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io endpoint url
+    # formspree_action = "https://formspree.io/sample/of/endpoint"
+    # contact_form_ajax = false
 
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
@@ -253,9 +267,20 @@ pluralizelisttitles = false
       """
 
 [permalinks]
-  en = "/en/:section/:year/:month/:title/"
-  vi = "/vi/:section/:year/:month/:title/"
 
+    decarbnews = "/decarbnews/:year/:month/:day/:filename/"
+
+
+# Enable or disable top bar with social icons
+#[params.topbar]
+#    enable = false
+#    text = """<p class="hidden-sm hidden-xs">Contact us on +84 912 345 678 or info@decarbdirect.com.</p>
+#      <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+#      <a href="mailto:info@decarbdirect.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+#      </p>
+#      """
+
+# Enable and disable widgets for the right sidebar
 [params.widgets]
     categories = true
     tags = true
@@ -279,13 +304,7 @@ pluralizelisttitles = false
     enable = true
     title = "From Decarb News"
     subtitle = "Latest Updates and Insights in Policy, Decarbonization, Sustainable Development, and Emissions Reduction Efforts"
-    hide_summary = true
-
-[languages.vi.params.recent_posts]
-    enable = true
-    title = "Cập nhật Decarb News"
-    subtitle = "Tin tức mới nhất về phát triển bền vững"
-    hide_summary = true
+    hide_summary = false
 
 [params.footer.recent_posts]
     enable = true
@@ -294,3 +313,4 @@ pluralizelisttitles = false
   category = "categories"
   tag = "tags"
   author = "authors"
+  
