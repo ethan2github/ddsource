@@ -1,5 +1,5 @@
 +++
-title = "Categories Post"
+title = "Bản tin Decarb News số 1"
 date = "2021-08-01T21:29:20+02:00"
 tags = ["golang", "programming", "theme", "hugo"]
 categories = ["programming","lorem","pseudo"]

@@ -1,6 +1,6 @@
 +++
-title = "FAQ"
-description = "Frequently asked questions"
+title = "FAQ Các câu hỏi thường gặp"
+description = "Các câu hỏi thường gặp"
 keywords = ["FAQ","How do I","questions","what if"]
 +++
 

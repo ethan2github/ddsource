@@ -5,13 +5,17 @@ themesDir = "themes"
 languageCode = "en-us"
 
 # Site language. Available translations in the theme's `/i18n` directory.
-#defaultContentLanguage = "en"
+defaultContentLanguage = "en"
 
 [languages]
 	[languages.en]
 		languageName = "English"
 		contentDir = "content/en"
 		weight = 1
+
+    [language.en.params]
+        disqusShortname = ""
+        googleAnalytics = ""
 
 	[languages.vi]
 		languageName = "Vietnamese"
@@ -21,31 +25,49 @@ languageCode = "en-us"
 	[languages.vi.params]
   		disqusshortname = ""
   		googleanalytics = ""
+        viewMorePostLink = "/vi/decarbnews/"
+        author = "ddp"
+        defaultKeywords = ["decarbonization", "update", "GHG news"]
+        mainSections = ["products","resources","decarbnews"]
+        defaultDescription = "Cập nhật các bài viết mới nhát liên quan tới thích ứng với biến đổi khí hậu, và phát triển bền vững"
+    
+        style = "green"
+
+        formspree_action = "https://formspree.io/f/mvoeyrbg"
+        contact_form_ajax = false
+
+        enableRecaptchaInContactForm = false
+        googleRecaptchaKey = ""
+
+        date_format = "January 2, 2006"
+
+    
         about_us = "<p>Đối tác tin cậy trên hành trình phát triển bền vững</p>"
         contact_url = "/vi/contact"
         address = """<p class="text-uppercase"><strong>Decarb Direct Partners</strong>
-        <br>Hà Nội
-        <br>Việt Nam
-        </p>
-        """
+                <br>Hà Nội
+                <br>Việt Nam
+                </p>
+                """
 
-# Enable comments by entering your Disqus shortname
-disqusShortname = ""
 
-# Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+    [languages.vi.params.clients]
+        enable = true
+        title = "Các đối tác"
+        subtitle = ""      
 
-# number of words of summarized post content (default 70)
+    [languages.vi.params.recent_posts]
+        enable = true
+        title = "Tin tức Decarb"
+        subtitle = "Cập nhật các bài viết mới nhát liên quan tới thích ứng với biến đổi khí hậu, và phát triển bền vững"
+        hide_summary = false
+
+
 summaryLength = 70
-
-# Define the number of posts per page
 paginate = 10
-
-# not pluralize title pages by default
 pluralizelisttitles = false
 
 [menu]
-
 
 # Main menu
 [[languages.en.menu.main]]
@@ -56,25 +78,25 @@ pluralizelisttitles = false
 
 [[languages.en.menu.main]]
     name       = "GHG Dashboard"
-    url        = "/products/dashboard"
+    url        = "/products/dashboard/"
     weight     = 11
     parent     = "menu.products"
 
 [[languages.en.menu.main]]
     name       = "GHG Analytics"
-    url        = "/products/analytics"
+    url        = "/products/analytics/"
     weight     = 12
     parent     = "menu.products"
 
 [[languages.en.menu.main]]
     name       = "GHG Reporting"
-    url        = "/products/reporting"
+    url        = "/products/reporting/"
     weight     = 13
     parent     = "menu.products"
 
 [[languages.en.menu.main]]
     name       = "Decarbonization Solutions"
-    url        = "/products/solutions"
+    url        = "/products/solutions/"
     weight     = 14
     parent     = "menu.products"
 
@@ -104,31 +126,31 @@ pluralizelisttitles = false
 
 [[languages.en.menu.main]]
     name       = "Decarb News"
-    url        = "/decarbnews/"
+    url        = "/decarbnews"
     identifier = "menu.decarbnews"
     weight     = 3
     
 [[languages.en.menu.main]]
     name       = "About us"
     identifier = "menu.aboutus"
-    url        = "/aboutus/"
+    url        = ""
     weight     = 4
 
 [[languages.en.menu.main]]
     name       = "Mission & Vision"
-    url        = "/aboutus/mission"
+    url        = "/mission/"
     weight     = 41
     parent     = "menu.aboutus"
 
 [[languages.en.menu.main]]
     name       = "Partnership"
-    url        = "/aboutus/partnership"
+    url        = "/partnership/"
     weight     = 42
     parent     = "menu.aboutus"
 
 [[languages.en.menu.main]]
     name       = "Contact us"
-    url        = "/aboutus/contact"
+    url        = "/contact/"
     weight     = 43
     parent     = "menu.aboutus"
 
@@ -148,19 +170,19 @@ pluralizelisttitles = false
 
 [[languages.vi.menu.main]]
     name       = "GHG Analytics"
-    url        = "/vi/products/analytics"
+    url        = "/vi/products/analytics/"
     weight     = 12
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "GHG Reporting"
-    url        = "/vi/products/reporting"
+    url        = "/vi/products/reporting/"
     weight     = 13
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "Decarbonization Solutions"
-    url        = "/vi/products/solutions"
+    url        = "/vi/products/solutions/"
     weight     = 14
     parent     = "menu.products"
 
@@ -190,59 +212,46 @@ pluralizelisttitles = false
 
 [[languages.vi.menu.main]]
     name       = "Decarb News"
-    url        = "/vi/decarbnews/"
+    url        = "/vi/decarbnews"
     identifier = "menu.decarbnews"
     weight     = 3
     
 [[languages.vi.menu.main]]
     name       = "Về Decarb Direct"
     identifier = "menu.aboutus"
-    url        = "/vi/aboutus/"
+    url        = ""
     weight     = 4
 
 [[languages.vi.menu.main]]
     name       = "Sứ mệnh & Tầm nhìn"
-    url        = "/vi/aboutus/mission"
+    url        = "/vi/mission/"
     weight     = 41
     parent     = "menu.aboutus"
 
 [[languages.vi.menu.main]]
     name       = "Hợp tác"
-    url        = "/vi/aboutus/partnership"
+    url        = "/vi/partnership/"
     weight     = 42
     parent     = "menu.aboutus"
 
 [[languages.vi.menu.main]]
     name       = "Liên hệ"
-    url        = "/vi/aboutus/contact"
+    url        = "/vi/contact/"
     weight     = 43
     parent     = "menu.aboutus"
+
 
 [params]
     viewMorePostLink = "/decarbnews/"
     author = "ddp"
     defaultKeywords = ["decarbonization", "update", "GHG news"]
-    mainSections = ["decarbnews"]
+    mainSections = ["products","resources","decarbnews"]
     defaultDescription = "Latest Updates and Insights in Policy, Decarbonization, Sustainable Development, and Emissions Reduction Efforts"
     
     style = "green"
 
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 50 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - register your account to https://formspree.io/register
-    # - login and create new form
-    # - set your form's endpoint url under 'formspree_action' below
-    # - upload the generated site to your server
-    # - test a dummy email yourself
-    # - you're done. Happy mailing!
-    #
-    # Enable the contact form by entering your Formspree.io endpoint url
-    # formspree_action = "https://formspree.io/sample/of/endpoint"
-    # contact_form_ajax = false
+    formspree_action = "https://formspree.io/f/mvoeyrbg"
+    contact_form_ajax = false
 
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
@@ -267,20 +276,11 @@ pluralizelisttitles = false
       """
 
 [permalinks]
+    decarbnews = "/:section/:filename"
+    products = "/products/:section/:filename"
+    resources = "/resources/:section/:filename"
+    "/" = "/:filename"
 
-    decarbnews = "/decarbnews/:year/:month/:day/:filename/"
-
-
-# Enable or disable top bar with social icons
-#[params.topbar]
-#    enable = false
-#    text = """<p class="hidden-sm hidden-xs">Contact us on +84 912 345 678 or info@decarbdirect.com.</p>
-#      <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-#      <a href="mailto:info@decarbdirect.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
-#      </p>
-#      """
-
-# Enable and disable widgets for the right sidebar
 [params.widgets]
     categories = true
     tags = true
@@ -294,11 +294,6 @@ pluralizelisttitles = false
     enable = true
     title = "Our Clients"
     subtitle = ""  
-
-[languages.vi.params.clients]
-    enable = true
-    title = "Các đối tác"
-    subtitle = ""      
 
 [params.recent_posts]
     enable = true
