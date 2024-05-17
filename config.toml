@@ -277,7 +277,7 @@ pluralizelisttitles = false
 
 [permalinks]
     decarbnews = "/:section/:filename"
-    products = "/products/:section/:filename"
+    products = "/:section/:filename"
     resources = "/resources/:section/:filename"
     "/" = "/:filename"
 
