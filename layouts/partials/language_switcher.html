@@ -1,4 +1,24 @@
-<select onchange="location = this.value;">
-    <option value="/" {{ if eq .Site.Language.Lang "en" }}selected{{ end }}>English</option>
-    <option value="/vi/" {{ if eq .Site.Language.Lang "vi" }}selected{{ end }}>Vietnamese</option>
+<select id="languageSwitcher">
+    <option value="vi" {{ if eq .Site.Language.Lang "vi" }}selected{{ end }}>Vietnamese</option>
+    <option value="en" {{ if eq .Site.Language.Lang "en" }}selected{{ end }}>English</option>
 </select>
+
+<script>
+    document.getElementById('languageSwitcher').addEventListener('change', function() {
+        var currentUrl = window.location.pathname;
+        var selectedLang = this.value;
+        var newUrl;
+
+        if (selectedLang === 'vi') {
+            newUrl = currentUrl.replace(/^\/en\//, '/');  // Change '/en/' to '/' for Vietnamese
+        } else if (selectedLang === 'en') {
+            if (currentUrl.startsWith('/en/')) {
+                newUrl = currentUrl;  // If already in English, no change
+            } else {
+                newUrl = '/en' + currentUrl;  // Add '/en' prefix for English
+            }
+        }
+
+        window.location.href = newUrl;
+    });
+</script>

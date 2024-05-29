@@ -4,32 +4,31 @@ theme = "hugo-universal-theme"
 themesDir = "themes"
 languageCode = "en-us"
 
-# Site language. Available translations in the theme's `/i18n` directory.
-defaultContentLanguage = "en"
+defaultContentLanguage = "vi"
 
 [languages]
-	[languages.en]
-		languageName = "English"
-		contentDir = "content/en"
-		weight = 1
-
-    [language.en.params]
-        disqusShortname = ""
-        googleAnalytics = ""
-
 	[languages.vi]
 		languageName = "Vietnamese"
 		contentDir = "content/vi"
+		weight = 1
+
+    [language.vi.params]
+        disqusShortname = ""
+        googleAnalytics = ""
+
+	[languages.en]
+		languageName = "English"
+		contentDir = "content/en"
 		weight = 2
 
-	[languages.vi.params]
+	[languages.en.params]
   		disqusshortname = ""
   		googleanalytics = ""
-        viewMorePostLink = "/vi/decarbnews/"
+        viewMorePostLink = "/en/decarbnews/"
         author = "ddp"
         defaultKeywords = ["decarbonization", "update", "GHG news"]
         mainSections = ["products","resources","decarbnews"]
-        defaultDescription = "Cập nhật các bài viết mới nhát liên quan tới thích ứng với biến đổi khí hậu, và phát triển bền vững"
+        defaultDescription = "Latest Updates and Insights in Policy, Decarbonization, Sustainable Development, and Emissions Reduction Efforts"
     
         style = "green"
 
@@ -41,26 +40,25 @@ defaultContentLanguage = "en"
 
         date_format = "January 2, 2006"
 
-    
-        about_us = "<p>Đối tác tin cậy trên hành trình phát triển bền vững</p>"
-        contact_url = "/vi/contact"
+        about_us = "<p>Your partner in decarbonization journey</p>"
+        contact_url = "/en/contact"
         address = """<p class="text-uppercase"><strong>Decarb Direct Partners</strong>
-                <br>Hà Nội
-                <br>Việt Nam
-                </p>
+                    <br>Hanoi
+                    <br>Vietnam
+                    </p>
                 """
+        
 
-
-    [languages.vi.params.clients]
+    [languages.en.params.clients]
         enable = true
-        title = "Các đối tác"
+        title = "Our Clients"
         subtitle = ""      
 
-    [languages.vi.params.recent_posts]
+    [languages.en.params.recent_posts]
         enable = true
-        title = "Tin tức Decarb"
-        subtitle = "Cập nhật các bài viết mới nhát liên quan tới thích ứng với biến đổi khí hậu, và phát triển bền vững"
-        hide_summary = false
+        title = "From Decarb News"
+        subtitle = "Latest Updates and Insights in Policy, Decarbonization, Sustainable Development, and Emissions Reduction Efforts"
+        hide_summary = true
 
 
 summaryLength = 70
@@ -73,60 +71,60 @@ pluralizelisttitles = false
 [[languages.en.menu.main]]
     name       = "Products"
     identifier = "menu.products"
-    url        = "/products"
+    url        = "/en/products"
     weight     = 1
 
 [[languages.en.menu.main]]
     name       = "GHG Dashboard"
-    url        = "/products/dashboard/"
+    url        = "/en/products/dashboard/"
     weight     = 11
     parent     = "menu.products"
 
 [[languages.en.menu.main]]
     name       = "GHG Analytics"
-    url        = "/products/analytics/"
+    url        = "/en/products/analytics/"
     weight     = 12
     parent     = "menu.products"
 
 [[languages.en.menu.main]]
     name       = "GHG Reporting"
-    url        = "/products/reporting/"
+    url        = "/en/products/reporting/"
     weight     = 13
     parent     = "menu.products"
 
 [[languages.en.menu.main]]
     name       = "Decarbonization Solutions"
-    url        = "/products/solutions/"
+    url        = "/en/products/solutions/"
     weight     = 14
     parent     = "menu.products"
 
 [[languages.en.menu.main]]
     name       = "Resources"
-    url        = "/resources"
+    url        = "/en/resources"
     identifier = "menu.resources"
     weight     = 2
 
 [[languages.en.menu.main]]
     name       = "Regulatory Updates"
-    url        = "/resources/regulatory"
+    url        = "/en/resources/regulatory/"
     weight     = 21
     parent     = "menu.resources"
 
 [[languages.en.menu.main]]
     name       = "Decarb Guidelines"
-    url        = "/resources/guidelines"
+    url        = "/en/resources/guidelines/"
     weight     = 22
     parent     = "menu.resources"
 
 [[languages.en.menu.main]]
     name       = "Case studies"
-    url        = "/resources/cases"
+    url        = "/en/resources/cases/"
     weight     = 23
     parent     = "menu.resources"
 
 [[languages.en.menu.main]]
     name       = "Decarb News"
-    url        = "/decarbnews"
+    url        = "/en/decarbnews"
     identifier = "menu.decarbnews"
     weight     = 3
     
@@ -138,19 +136,19 @@ pluralizelisttitles = false
 
 [[languages.en.menu.main]]
     name       = "Mission & Vision"
-    url        = "/mission/"
+    url        = "/en/mission/"
     weight     = 41
     parent     = "menu.aboutus"
 
 [[languages.en.menu.main]]
     name       = "Partnership"
-    url        = "/partnership/"
+    url        = "/en/partnership/"
     weight     = 42
     parent     = "menu.aboutus"
 
 [[languages.en.menu.main]]
     name       = "Contact us"
-    url        = "/contact/"
+    url        = "/en/contact/"
     weight     = 43
     parent     = "menu.aboutus"
 
@@ -159,60 +157,60 @@ pluralizelisttitles = false
 [[languages.vi.menu.main]]
     name       = "Sản phẩm"
     identifier = "menu.products"
-    url        = "/vi/products"
+    url        = "/products"
     weight     = 1
 
 [[languages.vi.menu.main]]
     name       = "GHG Dashboard"
-    url        = "/vi/products/dashboard"
+    url        = "/products/dashboard"
     weight     = 11
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "GHG Analytics"
-    url        = "/vi/products/analytics/"
+    url        = "/products/analytics/"
     weight     = 12
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "GHG Reporting"
-    url        = "/vi/products/reporting/"
+    url        = "/products/reporting/"
     weight     = 13
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "Decarbonization Solutions"
-    url        = "/vi/products/solutions/"
+    url        = "/products/solutions/"
     weight     = 14
     parent     = "menu.products"
 
 [[languages.vi.menu.main]]
     name       = "Thư viện"
-    url        = "/vi/resources"
+    url        = "/resources"
     identifier = "menu.resources"
     weight     = 2
 
 [[languages.vi.menu.main]]
     name       = "Chính sách & quy định mới"
-    url        = "/vi/resources/regulatory"
+    url        = "/resources/regulatory"
     weight     = 21
     parent     = "menu.resources"
 
 [[languages.vi.menu.main]]
     name       = "Sổ tay hướng dẫn"
-    url        = "/vi/resources/guidelines"
+    url        = "/resources/guidelines"
     weight     = 22
     parent     = "menu.resources"
 
 [[languages.vi.menu.main]]
     name       = "Case studies"
-    url        = "/vi/resources/cases"
+    url        = "/resources/cases"
     weight     = 23
     parent     = "menu.resources"
 
 [[languages.vi.menu.main]]
     name       = "Decarb News"
-    url        = "/vi/decarbnews"
+    url        = "/decarbnews"
     identifier = "menu.decarbnews"
     weight     = 3
     
@@ -224,19 +222,19 @@ pluralizelisttitles = false
 
 [[languages.vi.menu.main]]
     name       = "Sứ mệnh & Tầm nhìn"
-    url        = "/vi/mission/"
+    url        = "/mission/"
     weight     = 41
     parent     = "menu.aboutus"
 
 [[languages.vi.menu.main]]
     name       = "Hợp tác"
-    url        = "/vi/partnership/"
+    url        = "/partnership/"
     weight     = 42
     parent     = "menu.aboutus"
 
 [[languages.vi.menu.main]]
     name       = "Liên hệ"
-    url        = "/vi/contact/"
+    url        = "/contact/"
     weight     = 43
     parent     = "menu.aboutus"
 
@@ -246,7 +244,7 @@ pluralizelisttitles = false
     author = "ddp"
     defaultKeywords = ["decarbonization", "update", "GHG news"]
     mainSections = ["products","resources","decarbnews"]
-    defaultDescription = "Latest Updates and Insights in Policy, Decarbonization, Sustainable Development, and Emissions Reduction Efforts"
+    defaultDescription = "Cập nhật các bài viết mới nhát liên quan tới biến đổi khí hậu, và phát triển bền vững"
     
     style = "green"
 
@@ -256,10 +254,10 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p>Your partner in decarbonization journey</p>"
+    about_us = "<p><strong>Decarb Direct</strong> cung cấp nền tảng chuyên sâu về kiểm kê phát thải khí nhà kính.</p>"
     copyright = "Copyright (c) 2024, Decarb Direct Partners, all rights reserved."
 
-    date_format = "January 2, 2006"
+    date_format = "02/01/2006"
 
     dropdown_mouse_over = true
 
@@ -270,15 +268,15 @@ pluralizelisttitles = false
     logo_small = "img/logo-small.png"
     contact_url = "/contact"
     address = """<p class="text-uppercase"><strong>Decarb Direct Partners</strong>
-        <br>Hanoi
-        <br>Vietnam
-        </p>
-      """
+                <br>Hà Nội
+                <br>Việt Nam
+                </p>
+                """
 
 [permalinks]
     decarbnews = "/:section/:filename"
     products = "/:section/:filename"
-    resources = "/resources/:section/:filename"
+    resources = "/:section/:filename"
     "/" = "/:filename"
 
 [params.widgets]
@@ -292,14 +290,14 @@ pluralizelisttitles = false
 
 [params.clients]
     enable = true
-    title = "Our Clients"
-    subtitle = ""  
+    title = "Các đối tác của Decarb Direct"
+    subtitle = "" 
 
 [params.recent_posts]
     enable = true
-    title = "From Decarb News"
-    subtitle = "Latest Updates and Insights in Policy, Decarbonization, Sustainable Development, and Emissions Reduction Efforts"
-    hide_summary = false
+    title = "Tin tức Decarb"
+    subtitle = "Cập nhật các bài viết mới nhát liên quan tới biến đổi khí hậu, và phát triển bền vững"
+    hide_summary = true
 
 [params.footer.recent_posts]
     enable = true
